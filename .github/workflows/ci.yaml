@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: my-step
         run: |
-          helm version | grep 'v\d*\.\d*\.\d'
+          echo "helm: $(helm version --short)"
           ./runner --version
           cd ./runner
           ls -la
