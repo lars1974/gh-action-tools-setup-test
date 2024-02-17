@@ -7,6 +7,15 @@ jobs:
       - name: my-step
         run: echo "Hello World!"
 
+      - run: helm version
+        name: Check Helm version
+
+      - run: java -version
+        name: Check Java version
+
+      - run: mvn -v
+        name: Check Maven version
+
       - name: my-second-step
         uses: lars1974/gh-actions-tools-setup@v1
 
