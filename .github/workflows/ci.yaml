@@ -16,8 +16,8 @@ jobs:
       - run: mvn -v
         name: Check Maven version
 
-      #- name: my-second-step
-      #  uses: lars1974/gh-actions-tools-setup@v1
+      - name: my-second-step
+        uses: lars1974/gh-actions-tools-setup@v1
 
       - run: helm version
         name: Check Helm version
