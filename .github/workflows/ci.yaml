@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: my-step
         run: |
-          az version
+          az version | jq '."azure-cli"'
 
 
 
