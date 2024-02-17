@@ -16,6 +16,9 @@ jobs:
       - run: mvn -v
         name: Check Maven version
 
+      - run: ssh -V
+        name: Check SSH version
+
       - name: my-second-step
         uses: lars1974/gh-actions-tools-setup@v1
 
