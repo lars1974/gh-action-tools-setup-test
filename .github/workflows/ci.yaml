@@ -8,6 +8,7 @@ jobs:
         run: |
           echo "helm: $(helm version --short)"
           echo az $(az --version | jq '."azure-cli"')
+          
 
 
       - run: helm version
