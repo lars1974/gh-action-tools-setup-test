@@ -13,5 +13,8 @@ jobs:
       - run: helm version
         name: Check Helm version
 
+      - run: java -version
+        name: Check Java version
+
 
 
