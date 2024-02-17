@@ -6,8 +6,9 @@ jobs:
     steps:
       - name: my-step
         run: |
+          cd runner
           ls -la
-          helm version
+          helm version | 'grep v\d*\.\d*\.\d'
 
       - run: helm version
         name: Check Helm version
