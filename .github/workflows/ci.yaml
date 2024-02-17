@@ -8,6 +8,7 @@ jobs:
         run: echo "Hello World!"
 
       - name: my-second-step
-        uses: Lars1974/gh-actions-tools-setup
+        uses: lars1974/gh-actions-tools-setup
+
 
 
