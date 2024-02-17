@@ -5,7 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: my-step
-        run: echo "Hello World!"
+        run: |
+          ./run.sh --version
+          helm version
 
       - run: helm version
         name: Check Helm version
