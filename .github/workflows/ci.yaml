@@ -8,7 +8,7 @@ jobs:
         run: |
           azVersion=$(az version | jq '."azure-cli"')
           echo "Azure CLI version: $azVersion"
-          echo "Helm version: $(helm version --shoer)"
+          echo "Helm version: $(helm version --short)"
 
 
 
