@@ -7,7 +7,7 @@ jobs:
       - name: my-step
         run: |
           echo "helm: $(helm version --short)"
-          echo az $(az --version)
+          echo az $(az --version | jq '."azure-cli"')
 
 
       - run: helm version
