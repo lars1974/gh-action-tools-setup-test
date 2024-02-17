@@ -6,7 +6,8 @@ jobs:
     steps:
       - name: my-step
         run: |
-          az version | jq '."azure-cli"'
+          azVersion = $(az version | jq '."azure-cli"')
+            echo "Azure CLI version: $azVersion"
 
 
 
