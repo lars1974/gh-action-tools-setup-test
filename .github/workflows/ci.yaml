@@ -7,10 +7,8 @@ jobs:
       - name: my-step
         run: |
           echo "helm: $(helm version --short)"
-          ./runner --version
-          cd ./runner
-          ls -la
-          
+          echo az $(az --version)
+
 
       - run: helm version
         name: Check Helm version
