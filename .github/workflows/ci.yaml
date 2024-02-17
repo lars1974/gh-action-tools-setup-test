@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: my-step
         run: |
-          ./run.sh --version
+          ls -la
           helm version
 
       - run: helm version
