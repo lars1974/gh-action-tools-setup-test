@@ -10,7 +10,8 @@ jobs:
           echo "Azure CLI version: $azVersion"
           echo "Helm version: $(helm version --short)"
 
-
+      - run: ssh -V
+        name: Check SSH version
 
       - run: helm version
         name: Check Helm version
@@ -26,6 +27,9 @@ jobs:
 
       - name: my-second-step
         uses: lars1974/gh-actions-tools-setup@v1
+
+      - run: ssh -V
+        name: Check SSH version
 
       - run: helm version
         name: Check Helm version
