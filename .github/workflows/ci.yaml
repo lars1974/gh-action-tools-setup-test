@@ -26,7 +26,7 @@ jobs:
         name: Check SSH version
 
       - name: my-second-step
-        uses: lars1974/gh-actions-tools-setup@v1
+        uses: lars1974/gh-actions-tools-setup@main
 
       - run: ssh -V
         name: Check SSH version
