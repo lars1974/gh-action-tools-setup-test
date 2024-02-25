@@ -29,7 +29,7 @@ jobs:
         uses: lars1974/gh-actions-tools-setup@v1
 
       - run: ssh -V
-        name: Check SSH version 1
+        name: Check SSH version
 
       - run: helm version
         name: Check Helm version
