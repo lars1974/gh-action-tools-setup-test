@@ -11,7 +11,7 @@ jobs:
           echo "Helm version: $(helm version --short)"
 
       - run: ssh -V
-        name: Check SSH version
+        name: Check SSH version s
 
       - run: helm version
         name: Check Helm version
